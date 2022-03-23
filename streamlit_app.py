@@ -40,7 +40,8 @@ if submit:
         date=date.today().strftime("%B %d, %Y"),
     )
 
-    pdf = pdfkit.from_string(html, False)
+    config = pdfkit.configuration(wkhtmltopdf='/opt/bin/wkhtmltopdf')
+    pdf = pdfkit.from_string(html, configuration=config)
     st.balloons()
 
     right.success("🎉 Your diploma was generated!")
