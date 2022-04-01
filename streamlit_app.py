@@ -23,7 +23,7 @@ if authentication_status:
 
 
 
-        st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
+        # st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
         st.title("🎓 Diploma PDF Generator")
 
         st.write(
