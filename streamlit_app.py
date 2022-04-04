@@ -22,7 +22,7 @@ name, authentication_status = authenticator.login('Login','main')
 if authentication_status:
 
 
-
+        st.write('Καλησπέρα, *%s*' % (name))
         # st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
         st.title("🎓 Diploma PDF Generator")
 
@@ -42,13 +42,9 @@ if authentication_status:
 
         left.write("Fill in the data:")
         form = left.form("template_form")
-        student = form.text_input("Student name")
-        course = form.selectbox(
-            "Choose course",
-            ["Report Generation in Streamlit", "Advanced Cryptography"],
-            index=0,
-        )
-        grade = form.slider("Grade", 1, 100, 60)
+        student = name
+        course="Report Generation in Streamlit"
+        grade = 100
         submit = form.form_submit_button("Generate PDF")
 
         if submit:
