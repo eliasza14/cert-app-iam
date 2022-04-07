@@ -15,6 +15,8 @@ html_logo = "<img style='display:block; margin-left:auto; margin-right:auto; tex
 
 with st.form(key='Login'):
     email= st.text_input("Email")
+    password=st.text_input("Password")
+    submit_button=st.form_submit_button(label='login')
 
 st.markdown(html_logo, unsafe_allow_html=True)
 
