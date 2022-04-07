@@ -8,9 +8,8 @@ from streamlit.components.v1 import iframe
 st.markdown("""
 <style>
 body {
-  background: #ff0099; 
-  background: -webkit-linear-gradient(to right, #ff0099, #493240); 
-  background: linear-gradient(to right, #ff0099, #493240); 
+  background: red !important; 
+ 
 }
 </style>
     """, unsafe_allow_html=True)
