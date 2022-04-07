@@ -11,7 +11,9 @@ from streamlit.components.v1 import iframe
 # usernames = ['Maria-terzi@hotmail.com','stella-a88@hotmail.com','depi1970@hotmail.com','magathou@hotmail.com']
 # passwords = ['tSYcA8GPCJ','hj2cJpZLXG','u46UXerHf9','pJH9CA7L2g']
 
+html_logo = "<img src='http://inclusiveeducation.eu/wp-content/uploads/2021/03/logoiam400x400.png'  width=400 height=400>"
 
+st.markdown(html_logo, unsafe_allow_html=True)
 
 names = ['ΛΑΜΠΡΙΑΝΑ ΤΣΙΑΚΠΙΝΗ','ΜΑΡΙΑ-ΕΙΡΗΝΗ ΓΑΛΕΡΑΚΗ','ΚΟΥΛΑ ΑΜΠΕΛΙΟΤΗ','ΕΙΡΗΝΗ ΑΝΑΤΣΟΥΤΣΟΥΛΑ','ΤΑΤΙΑΝΑ ΕΛΕΟΝΩΡΑ ΑΝΑΓΝΩΣΤΙΔΟΥ','ΕΥΓΕΝΙΑ ΤΡΑΓΑΚΗ','ΣΠΥΡΙΔΩΝ ΒΑΛΒΗΣ','ΣΟΦΙΑ ΓΙΔΑΡΗ','ΔΗΜΗΤΡΗΣ ΑΡΒΑΝΙΤΗΣ','ΠΑΝΑΓΙΩΤΑ ΒΑΣΙΛΕΙΟΥ','ΕΜΜΑΝΟΥΕΛΑ ΒΑΣΙΛΕΙΑΔΗ','ΜΑΡΙΑ ΓΟΥΡΓΙΩΤΗ','ΕΛΠΙΔΑ ΓΟΥΚΟΥ','ΜΑΡΙΑ ΤΕΡΖΟΥΔΗ','ΓΕΩΡΓΙΑ ΒΕΛΟΥΔΟΥ','ΜΑΡΙΑ ΤΕΡΖΗ','ΜΑΡΙΑ ΓΕΩΡΓΟΠΟΥΛΟΥ','ΒΑΣΣΟ ΑΝΔΡΟΥΤΣΟΥ','ΧΡΗΣΤΙΝΑ ΑΛΒΑΝΗ','ΘΕΟΔΩΡΑ ΓΚΟΥΝΑ','ΜΑΡΙΑ ΑΓΑΘΟΥ','ΑΛΕΞΙΟΣ ΑΡΦΑΝΗΣ','ΕΥΑΓΓΕΛΙΑ ΒΑΡΣΑΜΑ','ΧΡΗΣΤΙΝΑ ΒΟΥΛΓΑΡΙΔΟΥ','ΔΕΣΠΟΙΝΑ ΑΒΡΑΜΙΔΟΥ','ΑΛΕΞΑΝΔΡΑ ΑΛΤΙΠΑΡΜΑΚΗ','ΛΟΥΙΖΑ ΑΛΕΞΙΑΔΟΥ','ΒΕΖΑΣΗΣ ΕΥΘΥΜΙΟΣ','ΕΛΛΗ ΑΓΓΕΛΑΚΟΠΟΥΛΟΥ','ΒΑΣΙΛΙΚΗ ΛΑΖΟΥ','ΑΝΔΡΙΑΝΑ ΔΕΛΕΓΚΟΥ','ΑΠΟΣΤΟΛΙΑ ΠΛΙΑΣΣΑ','ΑΝΑΣΤΑΣΙΑ ΧΑΤΖΗΓΕΩΡΓΙΟΥ','ΑΛΙΚΗ ΒΑΒΟΥΓΥΙΟΥ','ΜΕΛΙΝΑ ΑΛΕΞΙΑΔΟΥ','ΤΣΑΡΟΥΧΑΣ ΝΕΚΤΑΡΙΟΣ','ΜΠΟΤΣΩΛΗ ΑΙΚΑΤΕΡΙΝΗ','ΑΙΚΑΤΕΡΙΝΗ ΓΚΑΓΚΑΛΗ','ΔΕΣΠΟΙΝΑ ΧΑΤΖΗΔΡΟΣΟΥ']
  
@@ -28,6 +30,7 @@ authenticator = stauth.authenticate(names,usernames,hashed_passwords,'some_cooki
 name, authentication_status = authenticator.login('Login','main')
 
 if authentication_status:
+
 
 
         st.write('Καλησπέρα, *%s*' % (name))
