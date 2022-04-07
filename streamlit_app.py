@@ -13,10 +13,7 @@ from streamlit.components.v1 import iframe
 
 html_logo = "<img style='display:block; margin-left:auto; margin-right:auto; text-align:center;' src='http://inclusiveeducation.eu/wp-content/uploads/2021/03/logoiam400x400.png'  width=300 height=300>"
 
-with st.form(key='Login'):
-    email= st.text_input("Email")
-    password=st.text_input("Password")
-    submit_button=st.form_submit_button(label='login')
+
 
 st.markdown(html_logo, unsafe_allow_html=True)
 
@@ -34,9 +31,6 @@ authenticator = stauth.authenticate(names,usernames,hashed_passwords,'some_cooki
 
 
 name, authentication_status = authenticator.login('Login','main')
-
-
-
 
 if authentication_status:
 
