@@ -44,11 +44,14 @@ if authentication_status:
             <!DOCTYPE html>
             <header></header>
             <style>
-                *{background-color:darkgreen}
+               .main css-1v3fvcr egzxvld3{background-color:darkgreen
+                
+                }
+                .title{}
             </style>
             <body>
                 <h1>HELLO</h1>
-
+                
             </body
         """
 
