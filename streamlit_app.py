@@ -59,9 +59,7 @@ if authentication_status:
                     background-color:white;
                     color:red;
                 }
-                .css-1cpxqw2.edgvbvh5 button:active{background-color:white;
-                    color:red;
-                    border:2px solid pink;}
+                
                 .title{}
                 .css-1cpxqw2.edgvbvh5{background-color:red;
                     color: white;
