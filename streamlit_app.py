@@ -20,6 +20,7 @@ newhtml="""
                     border-radius:15px;
                     margin-top:67px;
                 }
+                .css-6awftf.e19lei0e1{ display:none;}
 
                 .title{}
                 .css-1cpxqw2.edgvbvh5{background-color:orange;
