@@ -80,7 +80,17 @@ if authentication_status:
                 </ul>
             </body
         """
-
+        html3="""
+            <!DOCTYPE html>
+            <header></header>
+            <style>
+               .diploma {text-align:center;}
+            
+            </style>
+            <body> 
+               <h3 class="diploma">🎓 Εκτυπώστε το πιστοποιητικό σας</h3>
+            </body
+        """
         st.markdown(newhtml,unsafe_allow_html=True)
         st.write('Καλησπέρα, *%s*' % (name))
         # st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
