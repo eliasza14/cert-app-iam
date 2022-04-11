@@ -25,6 +25,11 @@ newhtml="""
                 .css-1cpxqw2.edgvbvh5{background-color:orange;
                     color: white;
                 }
+                .css-1cpxqw2.edgvbvh5:hover{background-color:orange;
+                    color: white;
+                    font-decoration:bold;
+                    border:2px solid white;
+                }
             
             </style>
             <body> 
