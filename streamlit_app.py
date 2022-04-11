@@ -122,7 +122,7 @@ if authentication_status:
 
         left, right = st.columns(2)
 
-        right.write("Here's the template we'll be using:")
+        # right.write("Here's the template we'll be using:")
 
         right.image("http://inclusiveeducation.eu/wp-content/uploads/2022/04/diploma2.png", width=300)
 
@@ -130,7 +130,7 @@ if authentication_status:
         template = env.get_template("template.html")
 
 
-        left.write("Fill in the data:")
+        # left.write("Fill in the data:")
         form = left.form("template_form")
         student = name
         course="Report Generation in Streamlit"
