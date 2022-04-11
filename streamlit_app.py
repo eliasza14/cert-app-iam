@@ -45,7 +45,7 @@ if authentication_status:
 
         st.write('Καλησπέρα, *%s*' % (name))
         # st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
-        st.title("🎓 Diploma PDF Generator")
+        st.title("🎓 Diploma PDF")
 
         st.write(
             "This app shows you how you can use Streamlit to make a PDF generator app in just a few lines of code!"
