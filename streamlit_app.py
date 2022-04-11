@@ -79,7 +79,7 @@ if authentication_status:
 
         right.write("Here's the template we'll be using:")
 
-        right.image("template.png", width=300)
+        right.image("http://inclusiveeducation.eu/wp-content/uploads/2022/04/diploma2.png", width=300)
 
         env = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
         template = env.get_template("template.html")
