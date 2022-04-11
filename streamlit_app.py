@@ -49,6 +49,7 @@ if authentication_status:
                 }
                 div.css-nlntq9.e16nr0p33 p{background-color:white;
                 }
+                .css-nlntq9.e16nr0p33{}
                 .block-container.css-12oz5g7.egzxvld2{background-color:white;
                     border:5px solid black;
                     border-radius:15px;
@@ -67,7 +68,7 @@ if authentication_status:
         st.title("🎓 Diploma PDF")
 
         st.write(
-            "This app shows you how you can use Streamlit to make a PDF generator app in just a few lines of code!"
+            "Παρακαλω καντε click στο κουπι Generate pdf για να παραλαβεται το διπλωμα παρακολουθηση σεμιναριου"
         )
 
         left, right = st.columns(2)
