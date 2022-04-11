@@ -25,10 +25,11 @@ newhtml="""
                 .css-1cpxqw2.edgvbvh5{background-color:orange;
                     color: white;
                 }
-                .css-1cpxqw2.edgvbvh5:hover{background-color:orange;
-                    color: white;
+                .css-1cpxqw2.edgvbvh5:hover{background-color:white;
+                    color: orange;
                     font-decoration:bold;
-                    border:2px solid white;
+                    border:3px solid orange;
+                    
                 }
             
             </style>
