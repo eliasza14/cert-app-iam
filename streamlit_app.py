@@ -69,10 +69,10 @@ if authentication_status:
         st.markdown(newhtml,unsafe_allow_html=True)
         st.write('Καλησπέρα, *%s*' % (name))
         # st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
-        st.title("🎓 Εκτυπωστε το Διπλωμα σας")
+        st.title("🎓 Εκτυπώστε το δίπλωμα σας")
 
         st.write(
-            "Παρακαλω καντε click στο κουπι Generate pdf για να παραλαβεται το διπλωμα παρακολουθησης σεμιναριου"
+            "Παρακαλώ κάντε click στο κουπί Generate PDF για να παραλάβεται το δίπλωμα παρακολούθησης σεμιναρίου"
         )
 
         left, right = st.columns(2)
