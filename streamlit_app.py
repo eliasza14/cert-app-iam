@@ -44,8 +44,8 @@ if authentication_status:
             <!DOCTYPE html>
             <header></header>
             <style>
-               .main css-1v3fvcr egzxvld3{background-color:darkgreen
-                
+               .css-1v3fvcr{background: rgb(34,193,195);
+                background: radial-gradient(circle, rgba(34,193,195,1) 46%, rgba(229,229,184,1) 100%);
                 }
                 .title{}
             </style>
