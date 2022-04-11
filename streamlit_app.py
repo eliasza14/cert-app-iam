@@ -49,7 +49,7 @@ if authentication_status:
                 }
                 div.css-nlntq9.e16nr0p33 p{background-color:white;
                 }
-                css-1n76uvr.e1tzin5v0{background-color:white;}
+                block-container.css-12oz5g7.egzxvld2{background-color:white;}
                 .title{}
             </style>
             <body>
