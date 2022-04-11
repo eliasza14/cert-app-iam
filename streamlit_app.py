@@ -75,8 +75,8 @@ if authentication_status:
             </style>
             <body> 
                 <ul>
-                    <li>Πατήστε στο κουμπί δημιουργία πιστοποιητικού για να δημιουργήσεται το πιστοποιητικό σας</li>
-                    <li>Αφού δημιουργήσεται το πιστοποιητικό σας πατήστε στο κουμπί παραλαβή πιστοποιητικού για να κατεβάσεται το πιστοποιητικό σας</li>
+                    <li>Πατήστε στο κουμπί "δημιουργία πιστοποιητικού" για να δημιουργήσεται το πιστοποιητικό σας</li>
+                    <li>Αφού δημιουργήσεται το πιστοποιητικό σας πατήστε στο κουμπί "παραλαβή πιστοποιητικού" για να κατεβάσεται το πιστοποιητικό σας</li>
                 </ul>
             </body
         """
@@ -103,7 +103,7 @@ if authentication_status:
         student = name
         course="Report Generation in Streamlit"
         grade = 100
-        submit = form.form_submit_button("Διμιουργεία πιστοποιητικου")
+        submit = form.form_submit_button("Δημιουργεία πιστοποιητικου")
 
         if submit:
             html = template.render(
@@ -116,11 +116,11 @@ if authentication_status:
             pdf = pdfkit.from_string(html, False)
             st.balloons()
 
-            right.success("🎉 Your diploma was generated!")
+            right.success("🎉 Το πιστοποιητικό σας δημιουργήθηκε!")
             # st.write(html, unsafe_allow_html=True)
             # st.write("")
             right.download_button(
-                "⬇️ Download PDF",
+                "⬇️ Παραλαβή πιστοποιητικού",
                 data=pdf,
                 file_name="diploma.pdf",
                 mime="application/octet-stream",
