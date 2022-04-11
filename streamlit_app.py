@@ -27,7 +27,7 @@ newhtml="""
                 }
                 .css-1cpxqw2.edgvbvh5:hover{background-color:white;
                     color: orange;
-                    font-size:bold;
+                    font-weight:bold;
                     border:3px solid orange;
 
                 }
