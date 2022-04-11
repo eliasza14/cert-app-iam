@@ -84,11 +84,11 @@ if authentication_status:
             <!DOCTYPE html>
             <header></header>
             <style>
-               .diploma h3 {text-align:center;}
+               .diploma h3{text-align:center;}
             
             </style>
             <body> 
-               <h3 class="diploma">🎓 Εκτυπώστε το πιστοποιητικό σας</h3>
+               <h3 class="diploma">Εκτυπώστε το πιστοποιητικό σας</h3>
             </body
         """
         st.markdown(newhtml,unsafe_allow_html=True)
