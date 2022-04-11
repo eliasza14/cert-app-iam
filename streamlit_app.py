@@ -51,7 +51,7 @@ if authentication_status:
                 }
                 .block-container.css-12oz5g7.egzxvld2{background-color:white;
                     border:5px solid black;
-                    border-radius:5px;
+                    border-radius:15px;
                 }
                 .title{}
             </style>
