@@ -53,11 +53,13 @@ if authentication_status:
                 .block-container.css-12oz5g7.egzxvld2{background-color:white;
                     border:5px solid black;
                     border-radius:15px;
+                    margin-top:67px;
                 }
                 .title{}
                 .css-1cpxqw2.edgvbvh5{background-color:red;
                     color: white;
                 }
+            
             </style>
             <body>
                 <h1>HELLO</h1>
