@@ -59,31 +59,31 @@ authenticator = stauth.authenticate(names,usernames,hashed_passwords,'some_cooki
 name, authentication_status = authenticator.login('Login','main')
 
 if authentication_status:
-        newhtml="""
-            <!DOCTYPE html>
-            <header></header>
-            <style>
-               .css-1v3fvcr{background: rgb(34,193,195);
-                background: radial-gradient(circle, rgba(34,193,195,1) 46%, rgba(229,229,184,1) 100%);
-                }
-                div.css-nlntq9.e16nr0p33 p{background-color:white;
-                }
-                .css-nlntq9.e16nr0p33{}
-                .block-container.css-12oz5g7.egzxvld2{background-color:white;
-                    border:5px solid black;
-                    border-radius:15px;
-                    margin-top:67px;
-                }
+        # newhtml="""
+        #     <!DOCTYPE html>
+        #     <header></header>
+        #     <style>
+        #        .css-1v3fvcr{background: rgb(34,193,195);
+        #         background: radial-gradient(circle, rgba(34,193,195,1) 46%, rgba(229,229,184,1) 100%);
+        #         }
+        #         div.css-nlntq9.e16nr0p33 p{background-color:white;
+        #         }
+        #         .css-nlntq9.e16nr0p33{}
+        #         .block-container.css-12oz5g7.egzxvld2{background-color:white;
+        #             border:5px solid black;
+        #             border-radius:15px;
+        #             margin-top:67px;
+        #         }
 
-                .title{}
-                .css-1cpxqw2.edgvbvh5{background-color:orange;
-                    color: white;
-                }
+        #         .title{}
+        #         .css-1cpxqw2.edgvbvh5{background-color:orange;
+        #             color: white;
+        #         }
             
-            </style>
-            <body> 
-            </body
-        """
+        #     </style>
+        #     <body> 
+        #     </body
+        # """
 
         html2="""
             <!DOCTYPE html>
@@ -102,15 +102,12 @@ if authentication_status:
         html3="""
             <!DOCTYPE html>
             <header></header>
-            <style>
-               .diploma h3 {text-align:center;}
-            
-            </style>
+ 
             <body> 
-               <h3 class="diploma">🎓 Εκτυπώστε το πιστοποιητικό σας</h3>
+               <h3 style="text-align:center;">🎓 Εκτυπώστε το πιστοποιητικό σας</h3>
             </body
         """
-        st.markdown(newhtml,unsafe_allow_html=True)
+        # st.markdown(newhtml,unsafe_allow_html=True)
         st.write('Καλησπέρα, *%s*' % (name))
         # st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
         st.markdown(html3,unsafe_allow_html=True)
