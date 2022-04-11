@@ -55,6 +55,9 @@ if authentication_status:
                     border-radius:15px;
                 }
                 .title{}
+                .css-1cpxqw2.edgvbvh5{background-color:red;
+                    color: white;
+                }
             </style>
             <body>
                 <h1>HELLO</h1>
