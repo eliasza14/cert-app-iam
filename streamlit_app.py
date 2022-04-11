@@ -66,14 +66,27 @@ if authentication_status:
             </body
         """
 
+        html2="""
+            <!DOCTYPE html>
+            <header></header>
+            <style>
+               
+            
+            </style>
+            <body> 
+                <ul>
+                    <li>Πατήστε στο κουμπί δημιουργία πιστοποιητικού για να δημιουργήσεται το πιστοποιητικό σας</li>
+                    <li>πατήστε στο κουμπί παραλαβή πιστοποιητικού για να κατεβάσεται το πιστοποιητικό σας</li>
+                </ul>
+            </body
+        """
+
         st.markdown(newhtml,unsafe_allow_html=True)
         st.write('Καλησπέρα, *%s*' % (name))
         # st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
         st.title("🎓 Εκτυπώστε το δίπλωμα σας")
 
-        st.write(
-            "Παρακαλώ κάντε click στο κουπί Generate PDF για να παραλάβεται το δίπλωμα παρακολούθησης σεμιναρίου"
-        )
+        st.write(html2,unsafe_allow_html=True)
 
         left, right = st.columns(2)
 
@@ -90,7 +103,7 @@ if authentication_status:
         student = name
         course="Report Generation in Streamlit"
         grade = 100
-        submit = form.form_submit_button("Generate PDF")
+        submit = form.form_submit_button("Διμιουργεία πιστοποιητικου")
 
         if submit:
             html = template.render(
