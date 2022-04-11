@@ -25,7 +25,7 @@ newhtml="""
                 .css-1cpxqw2.edgvbvh5{background-color:orange;
                     color: white;
                 }
-                .css-1cpxqw2.edgvbvh5:hover{background-color:white;
+                .css-1cpxqw2.edgvbvh5:focus{background-color:white;
                     color: orange;
                     font-weight:bold;
                     border:3px solid orange;
