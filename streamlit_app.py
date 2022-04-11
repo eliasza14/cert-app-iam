@@ -84,7 +84,7 @@ if authentication_status:
             <!DOCTYPE html>
             <header></header>
             <style>
-               .diploma {text-align:center;}
+               .diploma h3 {text-align:center;}
             
             </style>
             <body> 
