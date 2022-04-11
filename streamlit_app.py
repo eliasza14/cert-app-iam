@@ -55,15 +55,20 @@ if authentication_status:
                     border-radius:15px;
                     margin-top:67px;
                 }
+                .css-1cpxqw2.edgvbvh5 button:hover{
+                    background-color:white;
+                    color:red;
+                }
+                .css-1cpxqw2.edgvbvh5 button:active{background-color:white;
+                    color:red;
+                    border:2px solid pink;}
                 .title{}
                 .css-1cpxqw2.edgvbvh5{background-color:red;
                     color: white;
                 }
             
             </style>
-            <body>
-                <h1>HELLO</h1>
-                
+            <body> 
             </body
         """
 
