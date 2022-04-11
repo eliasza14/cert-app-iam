@@ -50,7 +50,7 @@ if authentication_status:
                 div.css-nlntq9.e16nr0p33 p{background-color:white;
                 }
                 .block-container.css-12oz5g7.egzxvld2{background-color:white;
-                    border:10px solid black;
+                    border:5px solid black;
                     border-radius:5px;
                 }
                 .title{}
