@@ -5,14 +5,33 @@ import streamlit as st
 import streamlit_authenticator as stauth
 from streamlit.components.v1 import iframe
 
-st.markdown("""
-<style>
-body {
-  background: red !important; 
- 
-}
-</style>
-    """, unsafe_allow_html=True)
+newhtml="""
+            <!DOCTYPE html>
+            <header></header>
+            <style>
+               .css-1v3fvcr{background: rgb(34,193,195);
+                background: radial-gradient(circle, rgba(34,193,195,1) 46%, rgba(229,229,184,1) 100%);
+                }
+                div.css-nlntq9.e16nr0p33 p{background-color:white;
+                }
+                .css-nlntq9.e16nr0p33{}
+                .block-container.css-12oz5g7.egzxvld2{background-color:white;
+                    border:5px solid black;
+                    border-radius:15px;
+                    margin-top:67px;
+                }
+
+                .title{}
+                .css-1cpxqw2.edgvbvh5{background-color:orange;
+                    color: white;
+                }
+            
+            </style>
+            <body> 
+            </body
+        """
+st.markdown(newhtml,unsafe_allow_html=True)
+
 
 # names = ['MARIA	TERZI','Στεριανή Αβράμη','ΔΕΣΠΟΙΝΑ ΑΒΡΑΜΙΔΟΥ','Μαρία Αγάθου']
 # usernames = ['Maria-terzi@hotmail.com','stella-a88@hotmail.com','depi1970@hotmail.com','magathou@hotmail.com']
