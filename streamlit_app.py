@@ -55,8 +55,8 @@ if authentication_status:
                     border-radius:15px;
                     margin-top:67px;
                 }
-                .css-1cpxqw2.edgvbvh5 button:hover{
-                    background-color:white;
+                .css-1cpxqw2.edgvbvh5 button:active{
+                    background-color:green;
                     color:red;
                 }
                 
