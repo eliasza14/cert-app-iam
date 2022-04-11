@@ -84,19 +84,19 @@ if authentication_status:
             <!DOCTYPE html>
             <header></header>
             <style>
-               .diploma h3{text-align:center;}
+               .diploma h3 {text-align:center;}
             
             </style>
             <body> 
-               <h3 class="diploma">Εκτυπώστε το πιστοποιητικό σας</h3>
+               <h3 class="diploma">🎓 Εκτυπώστε το πιστοποιητικό σας</h3>
             </body
         """
         st.markdown(newhtml,unsafe_allow_html=True)
         st.write('Καλησπέρα, *%s*' % (name))
         # st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
-        st.title(html3,unsafe_allow_html=True)
+        st.markdown(html3,unsafe_allow_html=True)
 
-        st.write(html2,unsafe_allow_html=True)
+        st.markdown(html2,unsafe_allow_html=True)
 
         left, right = st.columns(2)
 
