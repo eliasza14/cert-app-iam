@@ -40,9 +40,19 @@ authenticator = stauth.authenticate(names,usernames,hashed_passwords,'some_cooki
 name, authentication_status = authenticator.login('Login','main')
 
 if authentication_status:
+        newhtml="""
+            <!DOCTYPE html>
+            <header></header>
+            <style>
+                *{background-color:darkgreen}
+            </style>
+            <body>
+                <h1>HELLO</h1>
 
+            </body
+        """
 
-
+        st.markdown(newhtml,unsafe_allow_html=True)
         st.write('Καλησπέρα, *%s*' % (name))
         # st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
         st.title("🎓 Diploma PDF")
