@@ -47,6 +47,8 @@ if authentication_status:
                .css-1v3fvcr{background: rgb(34,193,195);
                 background: radial-gradient(circle, rgba(34,193,195,1) 46%, rgba(229,229,184,1) 100%);
                 }
+                div.css-nlntq9.e16nr0p33 p{background-color:white;
+                }
                 .title{}
             </style>
             <body>
