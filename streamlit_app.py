@@ -57,7 +57,7 @@ if authentication_status:
                 }
 
                 .title{}
-                .css-1cpxqw2.edgvbvh5{background-color:green;
+                .css-1cpxqw2.edgvbvh5 button:hover{background-color:green;
                     color: white;
                 }
             
