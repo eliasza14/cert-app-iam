@@ -113,7 +113,7 @@ if authentication_status:
         student = name
         course="Report Generation in Streamlit"
         grade = 100
-        submit = form.form_submit_button("Δημιουργεία πιστοποιητικου")
+        submit = form.form_submit_button("Δημιουργία πιστοποιητικού")
 
         if submit:
             html = template.render(
