@@ -16,7 +16,7 @@ newhtml="""
                 }
                 .css-nlntq9.e16nr0p33{}
                 .block-container.css-12oz5g7.egzxvld2{background-color:white;
-                    border:5px solid black;
+                    border:5px solid orange;
                     border-radius:15px;
                     margin-top:67px;
                 }
