@@ -146,7 +146,7 @@ if authentication_status:
         course="Report Generation in Streamlit"
         grade = 100
         submit = form.form_submit_button("Δημιουργία πιστοποιητικού")
-
+        period = periods
         if submit:
             html = template.render(
                 student=student,
