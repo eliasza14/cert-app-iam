@@ -151,6 +151,7 @@ if authentication_status:
             html = template.render(
                 student=student,
                 course=course,
+                period=period,
                 grade=f"{grade}/100",
                 date=date.today().strftime("%B %d, %Y"),
             )
