@@ -69,7 +69,7 @@ periods=['11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου',
 
 hashed_passwords = stauth.hasher(passwords).generate()
 
-authenticator = stauth.authenticate(names,usernames,hashed_passwords,'some_cookie_name','some_signature_key',cookie_expiry_days=30)
+authenticator = stauth.authenticate(names,usernames,hashed_passwords,periods,'some_cookie_name','some_signature_key',cookie_expiry_days=30)
 
 
 name, authentication_status = authenticator.login('Login','main')
@@ -139,7 +139,7 @@ if authentication_status:
         env = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
         template = env.get_template("template.html")
 
-
+        
         # left.write("Fill in the data:")
         form = left.form("template_form")
         student = name
