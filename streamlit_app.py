@@ -4,7 +4,7 @@ from datetime import date
 import streamlit as st
 import streamlit_authenticator as stauth
 from streamlit.components.v1 import iframe
-
+import time
 
 def period_counter(list1,list4,n):
     index = list1.index(n)
@@ -82,10 +82,14 @@ authenticator = stauth.authenticate(names,usernames,hashed_passwords,'some_cooki
 
 name, authentication_status = authenticator.login('Login','main')
 
-st.warning('Η εφαρμογή φορτώνει...')
 
 
 if authentication_status:
+        with st.spinner('Wait for it...'):
+            time.sleep(5)
+        st.success('Done!')
+
+    
         # newhtml="""
         #     <!DOCTYPE html>
         #     <header></header>
