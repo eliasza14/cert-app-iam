@@ -75,12 +75,15 @@ periods=['11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου',
 
 
 # hashed_passwords = stauth.hasher(passwords).generate()
-hashed_passwords = passwords
+hashed_passwords = stauth.hasher(passwords).generate()
 
-authenticator = stauth.authenticate(names,usernames,passwords,'some_cookie_name','some_signature_key',cookie_expiry_days=30)
+authenticator = stauth.authenticate(names,usernames,hashed_passwords,'some_cookie_name','some_signature_key',cookie_expiry_days=30)
 
 
 name, authentication_status = authenticator.login('Login','main')
+
+st.warning('Η εφαρμογή φορτώνει...')
+
 
 if authentication_status:
         # newhtml="""
