@@ -85,11 +85,6 @@ name, authentication_status = authenticator.login('Login','main')
 
 
 if authentication_status:
-        with st.spinner('Wait for it...'):
-            time.sleep(5)
-        st.success('Done!')
-
-    
         # newhtml="""
         #     <!DOCTYPE html>
         #     <header></header>
