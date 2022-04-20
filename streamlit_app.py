@@ -69,10 +69,10 @@ periods=['11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου',
 
 hashed_passwords = stauth.hasher(passwords).generate()
 
-authenticator = stauth.authenticate(names,usernames,hashed_passwords,periods,'some_cookie_name','some_signature_key',cookie_expiry_days=30)
+authenticator = stauth.authenticate(names,usernames,hashed_passwords,'some_cookie_name','some_signature_key',cookie_expiry_days=30)
 
 
-name, username, hashed_password,period, authentication_status = authenticator.login('Login','main')
+name, authentication_status = authenticator.login('Login','main')
 
 if authentication_status:
         # newhtml="""
@@ -146,14 +146,14 @@ if authentication_status:
         student = name
         course="Report Generation in Streamlit"
         grade = 100
-        period = periods
+        
         submit = form.form_submit_button("Δημιουργία πιστοποιητικού")
         
         if submit:
             html = template.render(
                 student=student,
                 course=course,
-                period=period,
+                
                 grade=f"{grade}/100",
                 date=date.today().strftime("%B %d, %Y"),
             )
