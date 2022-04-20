@@ -5,6 +5,13 @@ import streamlit as st
 import streamlit_authenticator as stauth
 from streamlit.components.v1 import iframe
 
+
+def period_counter(list1,list4,n):
+    index = list1.index(n)
+    per=list4[index]
+    return per
+
+
 newhtml="""
             <!DOCTYPE html>
             <header></header>
@@ -125,6 +132,7 @@ if authentication_status:
         """
         # st.markdown(newhtml,unsafe_allow_html=True)
         st.write('Καλησπέρα, *%s*' % (name))
+        perds=period_counter(names,periods,name)
 
         # st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
         st.markdown(html3,unsafe_allow_html=True)
@@ -146,14 +154,14 @@ if authentication_status:
         student = name
         course="Report Generation in Streamlit"
         grade = 100
-        
+        period=perds
         submit = form.form_submit_button("Δημιουργία πιστοποιητικού")
         
         if submit:
             html = template.render(
                 student=student,
                 course=course,
-                
+                period=period,
                 grade=f"{grade}/100",
                 date=date.today().strftime("%B %d, %Y"),
             )
