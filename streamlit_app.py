@@ -69,7 +69,7 @@ st.markdown(html_logo, unsafe_allow_html=True)
 # passwords=['kKw63vspMq', 'AV2wPELFZS', 'BK259LtGwu', 'a6BzbdXRJu', 'mLTcrCs6a9', 'Jv37HCYAMX', 'j8m7Dn4VHQ', 'AXJLQHhw7d', 'ZUc9n2gWVp', 'Hvuk4aspx7', 'MLVTdK26SB', 'UpZcq6hKTC', 'paT7jEgSAw', 'eH6ZDwbk2N', 'Wzp96ykNeD', 'tSYcA8GPCJ', 'w3XjgRETsL', 'Hy26wLYmzk', 'GsBEYywW9n', 'TpSe6atkf2', 'pJH9CA7L2g', 'L4UWEuD8MA', 'Q2GTuYE8ch', 'xcA43GJWaf', 'u46UXerHf9', 'Nz58pmgUDF', 'prF4k9VXb2', 'E8L4MjXsWe', 'UxYV7bNfv4', 'Aax5Xe3pTK', 'RTFtj7Vg3x', 'X94bWctMj5', 'TEahK53skD', 'YFDHf4cB8n', 'jPsvBFte7z', 'ZuAf4sPJUw', 'wWgcxYk7M2', 'M5Dr8aJxhy', 'zPeaCyw3nq', 'xK6fdCh957', 'FmLV3yETru', 'Luh5DAsG3z', 'C9LAyaVnG4', 'QgK64HvXbs', 'vk3d548UTh', 'j3yW5wTMmX', 'Kaj7SLhUgb', 's7nCSxg8D6', 'Ud3aV4KxDv', 'gWEu5mP9af', 'KEg9Lf5acb', 'mJ7S4fRDKG', 'VLnz95ATF3', 'YjRHyW2kU3', 'YrSkWj8wXp', 'f2qecKdsgR', 'zLch3KQ4Yg', 'S4Gn9NEpjz', 'r36bCMyk2K', 'CRnKGw3Lmx', 'gECXFsJ2zV', 'RxHtjBkG4g', 'meCVcW3jGp', 'DXMWE6sgGn', 'TMvU6FnpPx', 'gj7KYfCXLc', 'sj382GLBMS', 'tv8q5TmKzF', 'K8scC4kJ3v', 'vy2BsQg6Wz', 'mRDFz8W43b', 'Ffr8nHcKYp', 'DsS32w85u7', 'ntUAeEV3WD', 'z8vGFDBMAQ', 'L6cZWVmsu8', 'SJ6pHmh7Ck', 'C8fexZT4R6', 'Hkw4mA3ZLF', 's8FEaD4cnB', 'u8amQwTbSX', 'mfwYVs6F2C', 'cz24J8fEKh', 'q3PSAeUnba', 'fA32gRKkXs', 'zcT5ZD6GsU', 'ZYf6e8tSXp', 'adWLg2ZUAV', 'vqwZS97Td2', 'AfTM7s9NpF', 'CpN8BKV2g4', 'nBzEkMy2jR', 'T3HK8f2wJg', 't7wezY2kPd', 'AKbn43mHY8', 'a7Z8duAUpD', 'bu9SEjGyfY', 'jv6Ek4rTgy', 'mMDd5Ra48f', 'UKqQjgaT9x', 'GESLcDg7jv', 'UDMgpm8zJR', 'x6tsTVapr5', 'u3ajr4kARH', 'QZe4xc2ATW', 'FdC95n2ZVw', 'G3VfyYQk9a', 'TEQ4xHvCt9', 'Mt9YH4jqeb', 'AP3xcv2VhX', 'XqpwB9Yv36', 'D85kt7GqfB', 'gpvK2b93Hq', 'zmwjbV3PTs', 'JTwkqVm2Kv', 'fq3cQWnjLR', 'zp35YamjRk', 'bwTXtGj4AZ', 'FC5vzgNrEL', 'KJE3PHhysB', 'A9xQmcH8jJ', 'j2K3hyV76L', 'bu5dhCHMcm', 'wmzHq8pWJG', 'EfTp8J5Duc', 'bTD58pkXCM', 'FZ5JYXnrMW', 'Q6537xmUrC', 'L2SkFNRn63', 'b6Yds7VLqk', 'bDUqJS4gLs', 'PJeuq3KH5p', 'hayN4S5KXV', 'c9uPY7fKbt', 'L6TbYtG274', 'WEVHfGnt2v', 'CXbg9QFMaw', 'Wz2YvXraCx', 'dVLJx5qRjS', 'sT3Q8PEVBx', 'dN5xw4h7Vq', 'dhpmqKQX9G', 'Ye69CpUFxq', 'Sd69btzrYy', 'g2PjzQxk9y', 'BMQ8fz2dc3', 'f4JHZBprSG', 'UrYqaAP3RM', 'yaXBdn6ATM', 'HqyK874k2g']
 # periods=['11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου', '2- 16 Απριλίου']
 
-data={"user":[
+data=[
     {
         "name": "ΛΑΜΠΡΙΑΝΑ ΤΣΙΑΚΠΙΝΗ",
         "email": "labrianatsiak@icloud.com",
@@ -970,9 +970,28 @@ data={"user":[
         "password": "HqyK874k2g",
         "period": "2- 16 Απριλίου"
     }
-]}
+]
+
+names=list()
+for i in range (len(data)):
+    print(data[i]["name"])
+    names.append(data[i]["name"])
+
+usernames=list()
+for i in range (len(data)):
+    print(data[i]["email"])
+    usernames.append(data[i]["email"])
 
 
+passwords=list()
+for i in range (len(data)):
+    print(data[i]["password"])
+    passwords.append(data[i]["password"])
+
+periods=list()
+for i in range (len(data)):
+    print(data[i]["period"])
+    periods.append(data[i]["period"])
 
 hashed_passwords = stauth.hasher(passwords).generate()
 
