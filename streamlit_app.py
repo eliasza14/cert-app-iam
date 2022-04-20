@@ -125,8 +125,7 @@ if authentication_status:
         """
         # st.markdown(newhtml,unsafe_allow_html=True)
         st.write('Καλησπέρα, *%s*' % (name))
-        st.write(periods)
-        st.write(periods[0])
+
         # st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
         st.markdown(html3,unsafe_allow_html=True)
 
