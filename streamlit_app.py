@@ -91,7 +91,9 @@ name='ΛΑΜΠΡΙΑΝΑ ΤΣΙΑΚΠΙΝΗ'
 if st.button('Login'):
     # Find 'Reema' in name column
     if title in df['email'].values:
-        title in df['email'].index
+        number=df.loc[df.isin([title]).any(axis=1)].index
+        index=number.tolist()[0]
+        st.write(index)
         st.write("\n  name is exists in DataFrame")
         auth=True
     else:
@@ -153,7 +155,7 @@ if auth:
             </body
         """
         # st.markdown(newhtml,unsafe_allow_html=True)
-        st.write('Καλησπέρα, *%s*' % (name))
+        st.write('Καλησπέρα, *%s*' % (df['name'][index]))
         # perds=period_counter(names,periods,name)
 
         # st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
