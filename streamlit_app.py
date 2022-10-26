@@ -5,6 +5,13 @@ import streamlit as st
 import streamlit_authenticator as stauth
 from streamlit.components.v1 import iframe
 import time
+import pandas as pd
+
+
+
+df=pd.read_json('datalist2.json')
+st.write(df)
+
 
 def period_counter(list1,list4,n):
     index = list1.index(n)
