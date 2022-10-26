@@ -66,7 +66,7 @@ periods=['11-19 Μαρτίου', '11-19 Μαρτίου', '11-19 Μαρτίου',
 
 
 # hashed_passwords = stauth.hasher(passwords).generate()
-hashed_passwords = stauth.hasher(passwords).generate()
+hashed_passwords = stauth.Hasher(passwords).generate()
 
 authenticator = stauth.authenticate(names,usernames,hashed_passwords,'some_cookie_name','some_signature_key',cookie_expiry_days=0)
 
