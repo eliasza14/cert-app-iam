@@ -11,7 +11,7 @@ def period_counter(list1,list4,n):
     per=list4[index]
     return per
 
-
+auth=False
 newhtml="""
             <!DOCTYPE html>
             <header></header>
