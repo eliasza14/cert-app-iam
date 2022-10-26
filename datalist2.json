@@ -1,7 +1,5 @@
-{           
- "user":[
-        
-    {
+[
+	{
         "name": "ΛΑΜΠΡΙΑΝΑ ΤΣΙΑΚΠΙΝΗ",
         "email": "labrianatsiak@icloud.com",
         "password": "kKw63vspMq",
@@ -12,19 +10,10 @@
         "email": "nikosmariagr@hotmail.com",
         "password": "AV2wPELFZS",
         "period": "11-19 Μαρτίου"
-    },
-    {
-        "name": "ΚΟΥΛΑ ΑΜΠΕΛΙΟΤΗ",
-        "email": "kampel85@yahoo.gr",
-        "password": "BK259LtGwu",
-        "period": "11-19 Μαρτίου"
-    },
-    {
-        "name": "ΕΙΡΗΝΗ ΑΝΑΤΣΟΥΤΣΟΥΛΑ",
-        "email": "spaeirhnh@hotmail.com",
-        "password": "a6BzbdXRJu",
-        "period": "11-19 Μαρτίου"
-    }]
-}
+    }
 
+]
+
+
+ 
  
