@@ -96,7 +96,16 @@ if st.button('Login'):
         st.write(index)
         st.write("\n  name is exists in DataFrame")
         auth=True
-        if auth:
+    else:
+        st.write('didnt found on database')
+        st.write('Why hello there')
+else:
+    st.write('Goodbye')
+
+
+
+
+if auth:
         # newhtml="""
         #     <!DOCTYPE html>
         #     <header></header>
@@ -123,7 +132,7 @@ if st.button('Login'):
         #     </body
         # """
 
-         html2="""
+        html2="""
             <!DOCTYPE html>
             <header></header>
             <style>
@@ -192,16 +201,6 @@ if st.button('Login'):
                 file_name="diploma.pdf",
                 mime="application/octet-stream",
             )
-
-    else:
-        st.write('didnt found on database')
-        st.write('Why hello there')
-else:
-    st.write('Goodbye')
-
-
-
-
 
 # elif authentication_status == False:
 #     st.error('Username/password is incorrect')
