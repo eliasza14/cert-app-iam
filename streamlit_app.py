@@ -61,7 +61,7 @@ st.markdown(html_logo, unsafe_allow_html=True)
 names=['ΛΑΜΠΡΙΑΝΑ ΤΣΙΑΚΠΙΝΗ']
 usernames=['labrianatsiak@icloud.com']
 passwords=['kKw63vspMq']
-periods=['11-19 Μαρτίου']
+# periods=['11-19 Μαρτίου']
 
 title = st.text_input('Email', 'labrianatsiak@icloud.com')
 
@@ -76,7 +76,7 @@ title = st.text_input('Email', 'labrianatsiak@icloud.com')
 
 # name, authentication_status, username = authenticator.login('Login', 'main')
 
-name='test'
+name='ΛΑΜΠΡΙΑΝΑ ΤΣΙΑΚΠΙΝΗ'
 
 if st.button('Say hello'):
     auth=True
@@ -138,7 +138,7 @@ if auth:
         """
         # st.markdown(newhtml,unsafe_allow_html=True)
         st.write('Καλησπέρα, *%s*' % (name))
-        perds=period_counter(names,periods,name)
+        # perds=period_counter(names,periods,name)
 
         # st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
         st.markdown(html3,unsafe_allow_html=True)
@@ -160,14 +160,13 @@ if auth:
         student = name
         course="Report Generation in Streamlit"
         grade = 100
-        period=perds
+        # period=perds
         submit = form.form_submit_button("Δημιουργία πιστοποιητικού")
         
         if submit:
             html = template.render(
                 student=student,
                 course=course,
-                period=period,
                 grade=f"{grade}/100",
                 date=date.today().strftime("%B %d, %Y"),
             )
