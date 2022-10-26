@@ -185,16 +185,17 @@ if auth:
                 mime="application/octet-stream",
             )
 
-elif authentication_status == False:
-    st.error('Username/password is incorrect')
-elif authentication_status == None:
-    st.warning('Please enter your username and password')
+# elif authentication_status == False:
+#     st.error('Username/password is incorrect')
+# elif authentication_status == None:
+#     st.warning('Please enter your username and password')
 
 
 # if st.session_state['authentication_status']:
 #     st.write('Welcome *%s*' % (st.session_state['name']))
 #     st.title('Some content')
-elif st.session_state['authentication_status'] == False:
-    st.error('Username/password is incorrect')
-elif st.session_state['authentication_status'] == None:
-    st.warning('Please enter your username and password')
+
+# elif st.session_state['authentication_status'] == False:
+#     st.error('Username/password is incorrect')
+# elif st.session_state['authentication_status'] == None:
+#     st.warning('Please enter your username and password')
