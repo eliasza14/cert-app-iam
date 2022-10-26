@@ -92,7 +92,6 @@ if st.button('Login'):
     # Find 'Reema' in name column
     if title in df['email'].values:
         title in df['email'].index
-        st.write(title in df['email'].index)
         st.write("\n  name is exists in DataFrame")
         auth=True
     else:
