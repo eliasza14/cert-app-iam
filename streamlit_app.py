@@ -63,20 +63,31 @@ usernames=['labrianatsiak@icloud.com']
 passwords=['kKw63vspMq']
 periods=['11-19 Μαρτίου']
 
+title = st.text_input('Email', 'labrianatsiak@icloud.com')
 
 
 # hashed_passwords = stauth.hasher(passwords).generate()
-hashed_passwords = stauth.Hasher(passwords).generate()
+# hashed_passwords = stauth.Hasher(passwords).generate()
 
-authenticator = stauth.Authenticate(names,usernames,hashed_passwords,'some_cookie_name','some_signature_key',cookie_expiry_days=0)
+# authenticator = stauth.Authenticate(names,usernames,hashed_passwords,'some_cookie_name','some_signature_key',cookie_expiry_days=0)
 
 
 # name, authentication_status = authenticator.login('Login','main')
 
-name, authentication_status, username = authenticator.login('Login', 'main')
+# name, authentication_status, username = authenticator.login('Login', 'main')
+
+name='test'
+
+if st.button('Say hello'):
+    auth=True
+    st.write('Why hello there')
+else:
+    st.write('Goodbye')
 
 
-if authentication_status:
+
+
+if auth:
         # newhtml="""
         #     <!DOCTYPE html>
         #     <header></header>
