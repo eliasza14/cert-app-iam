@@ -9,7 +9,7 @@ import pandas as pd
 
 
 
-df=pd.read_json('datalist2.json')
+df=pd.read_json('datalist2.json',sep=',')
 st.write(df)
 
 
