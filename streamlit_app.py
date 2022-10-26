@@ -13,6 +13,109 @@ df=pd.read_json('datalist2.json')
 st.write(df)
 
 
+
+def viewDashboard(auth):
+
+    if auth:
+            # newhtml="""
+            #     <!DOCTYPE html>
+            #     <header></header>
+            #     <style>
+            #        .css-1v3fvcr{background: rgb(34,193,195);
+            #         background: radial-gradient(circle, rgba(34,193,195,1) 46%, rgba(229,229,184,1) 100%);
+            #         }
+            #         div.css-nlntq9.e16nr0p33 p{background-color:white;
+            #         }
+            #         .css-nlntq9.e16nr0p33{}
+            #         .block-container.css-12oz5g7.egzxvld2{background-color:white;
+            #             border:5px solid black;
+            #             border-radius:15px;
+            #             margin-top:67px;
+            #         }
+
+            #         .title{}
+            #         .css-1cpxqw2.edgvbvh5{background-color:orange;
+            #             color: white;
+            #         }
+                
+            #     </style>
+            #     <body> 
+            #     </body
+            # """
+
+            html2="""
+                <!DOCTYPE html>
+                <header></header>
+                <style>
+                
+                
+                </style>
+                <body> 
+                    <ul>
+                        <li>Πατήστε στο κουμπί "δημιουργία πιστοποιητικού" για να δημιουργήσετε το πιστοποιητικό σας</li>
+                        <li>Αφού δημιουργήσετε το πιστοποιητικό σας, πατήστε στο κουμπί "παραλαβή πιστοποιητικού" για να κατεβάσετε το πιστοποιητικό σας</li>
+                    </ul>
+                </body
+            """
+            html3="""
+                <!DOCTYPE html>
+                <header></header>
+    
+                <body> 
+                <h3 style="text-align:center;">🎓 Εκτυπώστε το πιστοποιητικό σας</h3>
+                </body
+            """
+            # st.markdown(newhtml,unsafe_allow_html=True)
+            st.write('Καλησπέρα, *%s*' % (df['name'][index]))
+            # perds=period_counter(names,periods,name)
+
+            # st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
+            st.markdown(html3,unsafe_allow_html=True)
+
+            st.markdown(html2,unsafe_allow_html=True)
+
+            left, right = st.columns(2)
+
+            # right.write("Here's the template we'll be using:")
+
+            right.image("http://inclusiveeducation.eu/wp-content/uploads/2022/04/template.png", width=300)
+
+            env = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
+            template = env.get_template("template.html")
+
+            
+            # left.write("Fill in the data:")
+            form = left.form("template_form")
+            student = name
+            course="Report Generation in Streamlit"
+            grade = 100
+            # period=perds
+            submit = form.form_submit_button("Δημιουργία πιστοποιητικού")
+            
+            if submit:
+                html = template.render(
+                    student=student,
+                    course=course,
+                    grade=f"{grade}/100",
+                    date=date.today().strftime("%B %d, %Y"),
+                )
+
+                pdf = pdfkit.from_string(html, False)
+                st.balloons()
+
+                right.success("🎉 Το πιστοποιητικό σας δημιουργήθηκε!")
+                # st.write(html, unsafe_allow_html=True)
+                # st.write("")
+                right.download_button(
+                    "⬇️ Παραλαβή πιστοποιητικού",
+                    data=pdf,
+                    file_name="diploma.pdf",
+                    mime="application/octet-stream",
+                )
+
+
+
+
 def period_counter(list1,list4,n):
     index = list1.index(n)
     per=list4[index]
@@ -95,7 +198,7 @@ if st.button('Login'):
         index=number.tolist()[0]
         st.write(index)
         st.write("\n  name is exists in DataFrame")
-        auth=True
+        viewDashboard(True)
     else:
         st.write('didnt found on database')
         st.write('Why hello there')
@@ -104,103 +207,6 @@ if st.button('Login'):
 
 
 
-
-if auth:
-        # newhtml="""
-        #     <!DOCTYPE html>
-        #     <header></header>
-        #     <style>
-        #        .css-1v3fvcr{background: rgb(34,193,195);
-        #         background: radial-gradient(circle, rgba(34,193,195,1) 46%, rgba(229,229,184,1) 100%);
-        #         }
-        #         div.css-nlntq9.e16nr0p33 p{background-color:white;
-        #         }
-        #         .css-nlntq9.e16nr0p33{}
-        #         .block-container.css-12oz5g7.egzxvld2{background-color:white;
-        #             border:5px solid black;
-        #             border-radius:15px;
-        #             margin-top:67px;
-        #         }
-
-        #         .title{}
-        #         .css-1cpxqw2.edgvbvh5{background-color:orange;
-        #             color: white;
-        #         }
-            
-        #     </style>
-        #     <body> 
-        #     </body
-        # """
-
-        html2="""
-            <!DOCTYPE html>
-            <header></header>
-            <style>
-               
-            
-            </style>
-            <body> 
-                <ul>
-                    <li>Πατήστε στο κουμπί "δημιουργία πιστοποιητικού" για να δημιουργήσετε το πιστοποιητικό σας</li>
-                    <li>Αφού δημιουργήσετε το πιστοποιητικό σας, πατήστε στο κουμπί "παραλαβή πιστοποιητικού" για να κατεβάσετε το πιστοποιητικό σας</li>
-                </ul>
-            </body
-        """
-        html3="""
-            <!DOCTYPE html>
-            <header></header>
- 
-            <body> 
-               <h3 style="text-align:center;">🎓 Εκτυπώστε το πιστοποιητικό σας</h3>
-            </body
-        """
-        # st.markdown(newhtml,unsafe_allow_html=True)
-        st.write('Καλησπέρα, *%s*' % (df['name'][index]))
-        # perds=period_counter(names,periods,name)
-
-        # st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
-        st.markdown(html3,unsafe_allow_html=True)
-
-        st.markdown(html2,unsafe_allow_html=True)
-
-        left, right = st.columns(2)
-
-        # right.write("Here's the template we'll be using:")
-
-        right.image("http://inclusiveeducation.eu/wp-content/uploads/2022/04/template.png", width=300)
-
-        env = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
-        template = env.get_template("template.html")
-
-        
-        # left.write("Fill in the data:")
-        form = left.form("template_form")
-        student = name
-        course="Report Generation in Streamlit"
-        grade = 100
-        # period=perds
-        submit = form.form_submit_button("Δημιουργία πιστοποιητικού")
-        
-        if submit:
-            html = template.render(
-                student=student,
-                course=course,
-                grade=f"{grade}/100",
-                date=date.today().strftime("%B %d, %Y"),
-            )
-
-            pdf = pdfkit.from_string(html, False)
-            st.balloons()
-
-            right.success("🎉 Το πιστοποιητικό σας δημιουργήθηκε!")
-            # st.write(html, unsafe_allow_html=True)
-            # st.write("")
-            right.download_button(
-                "⬇️ Παραλαβή πιστοποιητικού",
-                data=pdf,
-                file_name="diploma.pdf",
-                mime="application/octet-stream",
-            )
 
 # elif authentication_status == False:
 #     st.error('Username/password is incorrect')
