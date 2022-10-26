@@ -85,9 +85,17 @@ title = st.text_input('Email', 'labrianatsiak@icloud.com')
 
 name='ΛΑΜΠΡΙΑΝΑ ΤΣΙΑΚΠΙΝΗ'
 
-if st.button('Say hello'):
-    auth=True
-    st.write('Why hello there')
+
+
+
+if st.button('Login'):
+    # Find 'Reema' in name column
+    if title in df['email'].values:
+        st.write("\n  name is exists in DataFrame")
+        auth=True
+    else:
+        st.write('didnt found on database')
+        st.write('Why hello there')
 else:
     st.write('Goodbye')
 
