@@ -99,8 +99,8 @@ if st.button('Login'):
     else:
         st.write('didnt found on database')
         st.write('Why hello there')
-else:
-    st.write('Goodbye')
+# else:
+#     st.write('Goodbye')
 
 
 
