@@ -198,7 +198,7 @@ if st.button('Login'):
         index=number.tolist()[0]
         st.write(index)
         st.write("\n  name is exists in DataFrame")
-        viewDashboard(True)
+       
     else:
         st.write('didnt found on database')
         st.write('Why hello there')
@@ -214,11 +214,12 @@ if st.button('Login'):
 #     st.warning('Please enter your username and password')
 
 
-# if st.session_state['authentication_status']:
-#     st.write('Welcome *%s*' % (st.session_state['name']))
-#     st.title('Some content')
+if st.session_state[auth]:
+    st.write('Welcome *%s*' % (st.session_state['name']))
+    st.title('Some content')
+    viewDashboard(True)
 
-# elif st.session_state['authentication_status'] == False:
-#     st.error('Username/password is incorrect')
+elif st.session_state[auth] == False:
+    st.error('Username/password is incorrect')
 # elif st.session_state['authentication_status'] == None:
 #     st.warning('Please enter your username and password')
