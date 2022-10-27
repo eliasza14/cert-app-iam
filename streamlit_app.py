@@ -11,7 +11,40 @@ import pandas as pd
 
 
 def main():
-    html_logo ="<img style='background-color:black;display:block; margin-left:auto; margin-right:auto; text-align:center;' src='https://healthcare-management.gr/wp-content/uploads/2022/10/MicrosoftTeams-image-16.png'  width=400 height=143>"
+    newhtml="""
+            <!DOCTYPE html>
+            <header></header>
+            <style>
+               .css-1v3fvcr{background: rgb(34,193,195);
+                background-image:url(https://healthcare-management.gr/wp-content/uploads/2022/10/Untitled-design-10.gif) ;
+                }
+                div.css-nlntq9.e16nr0p33 p{background-color:white;
+                }
+                .css-nlntq9.e16nr0p33{}
+                .block-container.css-12oz5g7.egzxvld2{background-color:white;
+                    border:5px solid orange;
+                    border-radius:15px;
+                    margin-top:67px;
+                }
+                .css-6awftf.e19lei0e1{ display:none;}
+
+                .title{}
+                .css-1cpxqw2.edgvbvh5{background-color:orange;
+                    color: white;
+                }
+                .css-1cpxqw2.edgvbvh5:focus{background-color:white;
+                    color: orange;
+                    font-weight:bold;
+                    border:3px solid orange;
+
+                }
+            
+            </style>
+            <body> 
+            </body
+        """
+    st.markdown(newhtml,unsafe_allow_html=True)
+    html_logo ="<img style='display:block; margin-left:auto; margin-right:auto; text-align:center;' src='https://healthcare-management.gr/wp-content/uploads/2022/10/MicrosoftTeams-image-16.png'  width=400 height=143>"
     st.markdown(html_logo, unsafe_allow_html=True)
 
 
@@ -30,8 +63,8 @@ def main():
         
             number=df.loc[df.isin([title]).any(axis=1)].index
             index=number.tolist()[0]
-            st.write(index)
-            st.write("\n  name is exists in DataFrame")
+            # st.write(index)
+            # st.write("\n  name is exists in DataFrame")
 
             # st.markdown(newhtml,unsafe_allow_html=True)
             st.write('Καλησπέρα, *%s*' % (df['name'][index]))
