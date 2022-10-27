@@ -12,6 +12,8 @@ import pandas as pd
 
 def main():
     st.header("Test Bug Download 404")
+    html_logo ="<img style='background-color:black;display:block; margin-left:auto; margin-right:auto; text-align:center;' src='https://healthcare-management.gr/wp-content/uploads/2022/10/MicrosoftTeams-image-16.png'  width=400 height=143>"
+    st.markdown(html_logo, unsafe_allow_html=True)
 
     input_form = st.sidebar.form("input_form")
     input_form.write("Email")
@@ -21,8 +23,8 @@ def main():
 
     if submit_button is True:
         st.write(title)
-
-        df = pd.DataFrame(data={"col1": [1, 2], "col2": [3, 4]})
+        df=pd.read_json('datalist2.json')
+        # df = pd.DataFrame(data={"col1": [1, 2], "col2": [3, 4]})
 
         st.dataframe(df)
 
