@@ -30,12 +30,59 @@ name='ΛΑΜΠΡΙΑΝΑ ΤΣΙΑΚΠΙΝΗ'
 
 
 if st.button('Login'):
-    # Find 'Reema' in name column
-    if title in df['email'].values:
-        number=df.loc[df.isin([title]).any(axis=1)].index
-        index=number.tolist()[0]
-        st.write(index)
-        st.write("\n  name is exists in DataFrame")
+    # st.markdown(newhtml,unsafe_allow_html=True)
+    st.write('Καλησπέρα, *%s*' % (df['name'][index]))
+    # perds=period_counter(names,periods,name)
+
+    # st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
+
+
+    left, right = st.columns(2)
+
+    # right.write("Here's the template we'll be using:")
+
+    right.image("http://inclusiveeducation.eu/wp-content/uploads/2022/04/template.png", width=300)
+
+    env = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
+    template = env.get_template("template.html")
+
+
+    # left.write("Fill in the data:")
+    form = left.form("template_form")
+    student = name
+    course="Report Generation in Streamlit"
+    grade = 100
+    # period=perds
+    submit = form.form_submit_button("Δημιουργία πιστοποιητικού")
+
+    if submit:
+        html = template.render(
+            student=student,
+            course=course,
+            grade=f"{grade}/100",
+            date=date.today().strftime("%B %d, %Y"),
+        )
+
+        pdf = pdfkit.from_string(html, False)
+        st.balloons()
+
+        right.success("🎉 Το πιστοποιητικό σας δημιουργήθηκε!")
+        # st.write(html, unsafe_allow_html=True)
+        # st.write("")
+        right.download_button(
+            "⬇️ Παραλαβή πιστοποιητικού",
+            data=pdf,
+            file_name="diploma.pdf",
+            mime="application/octet-stream",
+        )
+
+
+    # # Find 'Reema' in name column
+    # if title in df['email'].values:
+    #     number=df.loc[df.isin([title]).any(axis=1)].index
+    #     index=number.tolist()[0]
+    #     st.write(index)
+    #     st.write("\n  name is exists in DataFrame")
         
     else:
         st.write('didnt found on database')
@@ -43,51 +90,5 @@ if st.button('Login'):
 
     
    
-
-# st.markdown(newhtml,unsafe_allow_html=True)
-st.write('Καλησπέρα, *%s*' % (df['name'][index]))
-# perds=period_counter(names,periods,name)
-
-# st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
-
-
-left, right = st.columns(2)
-
-# right.write("Here's the template we'll be using:")
-
-right.image("http://inclusiveeducation.eu/wp-content/uploads/2022/04/template.png", width=300)
-
-env = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
-template = env.get_template("template.html")
-
-
-# left.write("Fill in the data:")
-form = left.form("template_form")
-student = name
-course="Report Generation in Streamlit"
-grade = 100
-# period=perds
-submit = form.form_submit_button("Δημιουργία πιστοποιητικού")
-
-if submit:
-    html = template.render(
-        student=student,
-        course=course,
-        grade=f"{grade}/100",
-        date=date.today().strftime("%B %d, %Y"),
-    )
-
-    pdf = pdfkit.from_string(html, False)
-    st.balloons()
-
-    right.success("🎉 Το πιστοποιητικό σας δημιουργήθηκε!")
-    # st.write(html, unsafe_allow_html=True)
-    # st.write("")
-    right.download_button(
-        "⬇️ Παραλαβή πιστοποιητικού",
-        data=pdf,
-        file_name="diploma.pdf",
-        mime="application/octet-stream",
-    )
 
 
