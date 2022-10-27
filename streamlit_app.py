@@ -6,9 +6,7 @@ import streamlit_authenticator as stauth
 from streamlit.components.v1 import iframe
 import time
 import pandas as pd
-import SessionState  # Assuming SessionState.py lives on this folder
 
-session = SessionState.get(run_id=0)
 
 
 df=pd.read_json('datalist2.json')
@@ -109,15 +107,7 @@ else:
     if (title==''):
         st.write("Please type email on the field")
 
-exit=st.button('Exit')
 
-slider_element = st.empty()
-
-if st.button("Reset"):
-  session.run_id += 1
-
-slider_element.slider("Slide me!", 0, 100, key=session.run_id)
-                    
     
    
 
