@@ -89,7 +89,7 @@ if title in df['email'].values:
                 data=pdf,
                 file_name="diploma.pdf",
                 mime="application/octet-stream",
-                on_click="test",
+                on_click="test()",
             )
             
 
