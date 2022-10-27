@@ -22,7 +22,6 @@ st.markdown(html_logo, unsafe_allow_html=True)
 title = st.text_input('Email', '')
 
 
-complete=False
 
 
     
@@ -88,11 +87,17 @@ if title in df['email'].values:
                 data=pdf,
                 file_name="diploma.pdf",
                 mime="application/octet-stream",
-                complete=True
             )
+            if right:
+                exit=st.button('Exit')
+                if exit:
+                    st.experimental_rerun()
 
-            if complete:
-                st.write('complete')
+
+                    
+                
+
+            
 
 
 
@@ -105,7 +110,6 @@ else:
         st.write("Please type email on the field")
 
 
-st.stop()
     
    
 
