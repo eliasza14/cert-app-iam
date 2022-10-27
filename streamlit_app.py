@@ -90,9 +90,9 @@ def viewDashboard():
     course="Report Generation in Streamlit"
     grade = 100
     # period=perds
-    submit = st.button("Δημιουργία πιστοποιητικού")
+    # submit = st.button("Δημιουργία πιστοποιητικού")
     
-    if submit:
+    if st.button("Δημιουργία πιστοποιητικού"):
         html = template.render(
             student=student,
             course=course,
