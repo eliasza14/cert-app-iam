@@ -17,7 +17,7 @@ def main():
 
     input_form = st.sidebar.form("input_form")
     input_form.write("Email")
-    input_form=st.text_input('Movie title', 'Life of Brian').form
+    input_form=st.text_input.form("input_form")
     title = st.text_input('Email', '')
     submit_button = input_form.form_submit_button("Submit")
 
