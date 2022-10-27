@@ -23,7 +23,7 @@ def main():
         df=pd.read_json('datalist2.json')
         # df = pd.DataFrame(data={"col1": [1, 2], "col2": [3, 4]})
 
-        st.dataframe(df)
+        # st.dataframe(df)
 
 
         if title in df['email'].values:
@@ -79,9 +79,9 @@ def main():
             )
         else:
             if (title!=''):
-                st.write("Not exist in db")
+                st.write("Το email που δώσατε δεν υπάρχει στην λίστα παρακολούθησης του συνέδριου.")
             if (title==''):
-                st.write("Please type email on the field")
+                st.write("Παρακαλώ πληκτρολογήστε το email που δωσάστε κατα την εγγραφή σας στο συνέδριο")
         
 
 
