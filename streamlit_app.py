@@ -11,13 +11,12 @@ import pandas as pd
 
 
 def main():
-    st.header("Test Bug Download 404")
     html_logo ="<img style='background-color:black;display:block; margin-left:auto; margin-right:auto; text-align:center;' src='https://healthcare-management.gr/wp-content/uploads/2022/10/MicrosoftTeams-image-16.png'  width=400 height=143>"
     st.markdown(html_logo, unsafe_allow_html=True)
 
 
     title = st.text_input('Email', '')
-    submit_button = st.button("Submit")
+    submit_button = st.button("Είσοδος")
 
     if submit_button is True:
         st.write(title)
@@ -78,6 +77,11 @@ def main():
                 file_name="diploma.pdf",
                 mime="application/octet-stream",
             )
+        else:
+            if (title!=''):
+                st.write("Not exist in db")
+            if (title==''):
+                st.write("Please type email on the field")
         
 
 
