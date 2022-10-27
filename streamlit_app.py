@@ -80,20 +80,10 @@ def main():
                 file_name="diploma.pdf",
                 mime="application/octet-stream",
             )
+            submit_button=False
         
 
 
-
-
-
-
-
-        st.download_button(
-            label="Download df",
-            data=df.to_csv().encode("utf-8"),
-            file_name="filename.csv",
-            mime="text/csv"
-        )
 
 
 
