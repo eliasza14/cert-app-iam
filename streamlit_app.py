@@ -17,14 +17,16 @@ html_logo ="<img style='background-color:black;display:block; margin-left:auto; 
 
 
 st.markdown(html_logo, unsafe_allow_html=True)
-
+hide=False
 
 
 title = st.text_input('Email', '')
 
 
 if title not in df['email'].values:
-    st.write("Το email δεν υπάρχει στην λίστα παρακολούθησης του συνεδρίου")
+    if hide==True:
+        st.write("Το email δεν υπάρχει στην λίστα παρακολούθησης του συνεδρίου")
+
 
     
 
@@ -39,6 +41,7 @@ if title not in df['email'].values:
     #     st.write("\n  name is exists in DataFrame")
 
 if title in df['email'].values:
+        hide=True
         number=df.loc[df.isin([title]).any(axis=1)].index
         index=number.tolist()[0]
         st.write(index)
