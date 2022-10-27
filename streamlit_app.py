@@ -88,10 +88,8 @@ if title in df['email'].values:
                 file_name="diploma.pdf",
                 mime="application/octet-stream",
             )
-            if right:
-                exit=st.button('Exit')
-                if exit:
-                    st.experimental_rerun()
+            
+               
 
 
                     
@@ -109,7 +107,11 @@ else:
     if (title==''):
         st.write("Please type email on the field")
 
+exit=st.button('Exit')
 
+if exit:
+    st.experimental_rerun()
+                    
     
    
 
