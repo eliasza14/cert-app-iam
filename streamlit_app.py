@@ -48,7 +48,7 @@ if title in df['email'].values:
 
         # right.write("Here's the template we'll be using:")
 
-        right.image("http://inclusiveeducation.eu/wp-content/uploads/2022/04/template.png", width=300)
+        right.image("https://healthcare-management.gr/wp-content/uploads/2022/10/certificate001.png", width=300)
 
         env = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
         template = env.get_template("template.html")
