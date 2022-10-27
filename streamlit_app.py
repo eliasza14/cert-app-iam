@@ -88,9 +88,10 @@ if title in df['email'].values:
                 data=pdf,
                 file_name="diploma.pdf",
                 mime="application/octet-stream",
+                complete=True
             )
 
-            if right:
+            if complete:
                 st.write('complete')
 
 
