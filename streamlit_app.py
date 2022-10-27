@@ -17,6 +17,15 @@ def main():
             <style>
             
            
+               .css-k1vhr4 {
+                    background-image:url(https://healthcare-management.gr/wp-content/uploads/2022/10/Untitled-design-10.gif)
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    overflow: auto;
+                    -webkit-box-align: center;
+                    align-items: center;
+                }
 
                  .css-1v3fvcr{background: rgb(34,193,195);
                 background: radial-gradient(circle, rgba(34,193,195,1) 46%, rgba(229,229,184,1) 100%);
