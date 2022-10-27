@@ -25,7 +25,7 @@ title = st.text_input('Email', '')
 
 
 
-name='ΛΑΜΠΡΙΑΝΑ ΤΣΙΑΚΠΙΝΗ'
+# name='ΛΑΜΠΡΙΑΝΑ ΤΣΙΑΚΠΙΝΗ'
 
 
     # # Find 'Reema' in name column
@@ -36,9 +36,13 @@ name='ΛΑΜΠΡΙΑΝΑ ΤΣΙΑΚΠΙΝΗ'
     #     st.write("\n  name is exists in DataFrame")
 
 if title in df['email'].values:
+        number=df.loc[df.isin([title]).any(axis=1)].index
+        index=number.tolist()[0]
+        st.write(index)
+        st.write("\n  name is exists in DataFrame")
 
         # st.markdown(newhtml,unsafe_allow_html=True)
-        st.write('Καλησπέρα, *%s*' % (df['name'][0]))
+        st.write('Καλησπέρα, *%s*' % (df['name'][index]))
         # perds=period_counter(names,periods,name)
 
         # st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
@@ -56,7 +60,7 @@ if title in df['email'].values:
 
         # left.write("Fill in the data:")
         form = left.form("template_form")
-        student = df['name'][0]
+        student = df['name'][index]
         course="Report Generation in Streamlit"
         grade = 100
         # period=perds
