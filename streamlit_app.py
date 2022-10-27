@@ -15,10 +15,12 @@ def main():
 
     input_form = st.sidebar.form("input_form")
     input_form.write("Email")
+
     title = st.text_input('Email', '')
     submit_button = input_form.form_submit_button("Submit")
 
     if submit_button is True:
+        st.write(title)
 
         df = pd.DataFrame(data={"col1": [1, 2], "col2": [3, 4]})
 
