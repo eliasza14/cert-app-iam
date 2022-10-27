@@ -91,7 +91,7 @@ if title in df['email'].values:
             )
 
 else:
-    if (title!=0):
+    if (title!=''):
         st.write("Not exist in db")
     if (title==''):
         st.write("Please type email on the field")
