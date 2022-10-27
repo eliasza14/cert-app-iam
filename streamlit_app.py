@@ -31,7 +31,7 @@ name='ΛΑΜΠΡΙΑΝΑ ΤΣΙΑΚΠΙΝΗ'
 
 if st.button('Login'):
     # st.markdown(newhtml,unsafe_allow_html=True)
-    st.write('Καλησπέρα, *%s*' % (df['name'][index]))
+    st.write('Καλησπέρα, *%s*' % (df['name'][0]))
     # perds=period_counter(names,periods,name)
 
     # st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
