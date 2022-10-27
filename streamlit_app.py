@@ -110,7 +110,7 @@ else:
 exit=st.button('Exit')
 
 if exit:
-    st.experimental_rerun()
+    st.stop()
                     
     
    
