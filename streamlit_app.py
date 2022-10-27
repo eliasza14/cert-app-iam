@@ -22,7 +22,7 @@ st.markdown(html_logo, unsafe_allow_html=True)
 title = st.text_input('Email', '')
 
 
-
+complete=False
 
 
     
@@ -89,6 +89,12 @@ if title in df['email'].values:
                 file_name="diploma.pdf",
                 mime="application/octet-stream",
             )
+            complete=True
+
+            if complete:
+                st.write('complete')
+
+
 
 
 
