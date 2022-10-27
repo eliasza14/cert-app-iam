@@ -86,6 +86,8 @@ if title in df['email'].values:
                 file_name="diploma.pdf",
                 mime="application/octet-stream",
             )
+else:
+    st.write("\n Το email σας δεν υπάρχει στην λίστα παρακολούθησης του συνεδριού")
 
 
 
