@@ -1,3 +1,4 @@
+from turtle import onclick
 import pdfkit
 from jinja2 import Environment, PackageLoader, select_autoescape, FileSystemLoader
 from datetime import date
@@ -7,7 +8,8 @@ from streamlit.components.v1 import iframe
 import time
 import pandas as pd
 
-
+def test():
+    st.write('clicked button')
 
 df=pd.read_json('datalist2.json')
 st.write(df)
@@ -87,6 +89,7 @@ if title in df['email'].values:
                 data=pdf,
                 file_name="diploma.pdf",
                 mime="application/octet-stream",
+                on_click="test",
             )
             
 
