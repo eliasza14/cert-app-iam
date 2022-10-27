@@ -15,15 +15,7 @@ def main():
             <!DOCTYPE html>
             <header></header>
             <style>
-            .css-k1vhr4 {
-    background-image: url(https://healthcare-management.gr/wp-content/uploads/2022/10/Untitled-design-10.gif);
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    overflow: auto;
-    -webkit-box-align: center;
-    align-items: center;
-}
+            
            
 
                  .css-1v3fvcr{background: rgb(34,193,195);
@@ -51,6 +43,8 @@ def main():
                     border:3px solid orange;
 
                 }
+
+                
 
 
 
