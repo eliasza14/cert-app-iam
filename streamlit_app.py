@@ -19,7 +19,7 @@ def main():
     submit_button = st.button("Είσοδος")
 
     if submit_button is True:
-        st.write(title)
+        # st.write(title)
         df=pd.read_json('datalist2.json')
         # df = pd.DataFrame(data={"col1": [1, 2], "col2": [3, 4]})
 
