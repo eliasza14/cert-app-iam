@@ -20,7 +20,7 @@ st.markdown(html_logo, unsafe_allow_html=True)
 
 
 
-title = st.text_input('Email', 'labrianatsiak@icloud.com')
+title = st.text_input('Email', '')
 
 
 
@@ -35,52 +35,53 @@ name='ΛΑΜΠΡΙΑΝΑ ΤΣΙΑΚΠΙΝΗ'
     #     st.write(index)
     #     st.write("\n  name is exists in DataFrame")
 
+if title in df['email'].values:
 
-# st.markdown(newhtml,unsafe_allow_html=True)
-st.write('Καλησπέρα, *%s*' % (df['name'][0]))
-# perds=period_counter(names,periods,name)
+        # st.markdown(newhtml,unsafe_allow_html=True)
+        st.write('Καλησπέρα, *%s*' % (df['name'][0]))
+        # perds=period_counter(names,periods,name)
 
-# st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
-
-
-left, right = st.columns(2)
-
-# right.write("Here's the template we'll be using:")
-
-right.image("http://inclusiveeducation.eu/wp-content/uploads/2022/04/template.png", width=300)
-
-env = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
-template = env.get_template("template.html")
+        # st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
 
 
-# left.write("Fill in the data:")
-form = left.form("template_form")
-student = name
-course="Report Generation in Streamlit"
-grade = 100
-# period=perds
-submit = form.form_submit_button("Δημιουργία πιστοποιητικού")
+        left, right = st.columns(2)
 
-if submit:
-    html = template.render(
-        student=student,
-        course=course,
-        grade=f"{grade}/100",
-        date=date.today().strftime("%B %d, %Y"),
-    )
+        # right.write("Here's the template we'll be using:")
 
-    pdf = pdfkit.from_string(html, False)
-    st.balloons()
+        right.image("http://inclusiveeducation.eu/wp-content/uploads/2022/04/template.png", width=300)
 
-    right.success("🎉 Το πιστοποιητικό σας δημιουργήθηκε!")
-    # st.write(html, unsafe_allow_html=True)
-    # st.write("")
-    right.download_button(
-        "⬇️ Παραλαβή πιστοποιητικού",
-        data=pdf,
-        file_name="diploma.pdf",
-        mime="application/octet-stream",
-    )
+        env = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
+        template = env.get_template("template.html")
+
+
+        # left.write("Fill in the data:")
+        form = left.form("template_form")
+        student = df['name'][0]
+        course="Report Generation in Streamlit"
+        grade = 100
+        # period=perds
+        submit = form.form_submit_button("Δημιουργία πιστοποιητικού")
+
+        if submit:
+            html = template.render(
+                student=student,
+                course=course,
+                grade=f"{grade}/100",
+                date=date.today().strftime("%B %d, %Y"),
+            )
+
+            pdf = pdfkit.from_string(html, False)
+            st.balloons()
+
+            right.success("🎉 Το πιστοποιητικό σας δημιουργήθηκε!")
+            # st.write(html, unsafe_allow_html=True)
+            # st.write("")
+            right.download_button(
+                "⬇️ Παραλαβή πιστοποιητικού",
+                data=pdf,
+                file_name="diploma.pdf",
+                mime="application/octet-stream",
+            )
 
 
 
