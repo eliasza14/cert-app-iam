@@ -89,7 +89,7 @@ if title in df['email'].values:
                 file_name="diploma.pdf",
                 mime="application/octet-stream",
             )
-            st.experimental_rerun()
+        st.experimental_rerun()
 
 
 
