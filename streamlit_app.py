@@ -24,7 +24,7 @@ def main():
                 }
 
                 .css-k1vhr4 {
-                    background: #2ad6ff;
+                    background-image: url('https://healthcare-management.gr/wp-content/uploads/2022/10/Untitled-design-10.gif');
                     display: flex;
                     flex-direction: column;
                     width: 100%;
