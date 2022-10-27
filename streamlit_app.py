@@ -110,7 +110,7 @@ else:
 exit=st.button('Exit')
 
 if exit:
-    st.stop()
+    st.success()
                     
     
    
