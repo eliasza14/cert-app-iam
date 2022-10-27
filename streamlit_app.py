@@ -14,14 +14,12 @@ st.write(df)
 
 
 html_logo ="<img style='background-color:black;display:block; margin-left:auto; margin-right:auto; text-align:center;' src='https://healthcare-management.gr/wp-content/uploads/2022/10/MicrosoftTeams-image-16.png'  width=400 height=143>"
-login=False
+
 
 st.markdown(html_logo, unsafe_allow_html=True)
 
 
-if login==False:
-    st.write(login)
-    title = st.text_input('Email', '')
+title = st.text_input('Email', '')
 
 
 
@@ -39,9 +37,7 @@ if login==False:
     #     st.write("\n  name is exists in DataFrame")
 
 if title in df['email'].values:
-        login=True
-        st.write(login)
-
+        
         number=df.loc[df.isin([title]).any(axis=1)].index
         index=number.tolist()[0]
         st.write(index)
@@ -93,10 +89,8 @@ if title in df['email'].values:
                 mime="application/octet-stream",
             )
             
-               
 
 
-                    
 else:
     if (title!=''):
         st.write("Not exist in db")
