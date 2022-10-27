@@ -59,29 +59,28 @@ def main():
             course="Report Generation in Streamlit"
             grade = 100
             # period=perds
-            submit = form.form_submit_button("Δημιουργία πιστοποιητικού")
+            # submit = form.form_submit_button("Δημιουργία πιστοποιητικού")
 
-            if submit:
-                html = template.render(
-                    student=student,
-                    course=course,
-                    grade=f"{grade}/100",
-                    date=date.today().strftime("%B %d, %Y"),
-                )
+            html = template.render(
+                student=student,
+                course=course,
+                grade=f"{grade}/100",
+                date=date.today().strftime("%B %d, %Y"),
+            )
 
-                pdf = pdfkit.from_string(html, False)
-                st.balloons()
+            pdf = pdfkit.from_string(html, False)
+            st.balloons()
 
-                right.success("🎉 Το πιστοποιητικό σας δημιουργήθηκε!")
-                # st.write(html, unsafe_allow_html=True)
-                # st.write("")
-                right.download_button(
-                    "⬇️ Παραλαβή πιστοποιητικού",
-                    data=pdf,
-                    file_name="diploma.pdf",
-                    mime="application/octet-stream",
-                )
-            
+            right.success("🎉 Το πιστοποιητικό σας δημιουργήθηκε!")
+            # st.write(html, unsafe_allow_html=True)
+            # st.write("")
+            right.download_button(
+                "⬇️ Παραλαβή πιστοποιητικού",
+                data=pdf,
+                file_name="diploma.pdf",
+                mime="application/octet-stream",
+            )
+        
 
 
 
