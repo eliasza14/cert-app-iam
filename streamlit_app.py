@@ -90,7 +90,7 @@ def viewDashboard():
     course="Report Generation in Streamlit"
     grade = 100
     # period=perds
-    submit = form.form_submit_button("Δημιουργία πιστοποιητικού")
+    submit = st.button("Δημιουργία πιστοποιητικού")
     
     if submit:
         html = template.render(
@@ -168,9 +168,9 @@ html_logo = "<img style='background-color:black;display:block; margin-left:auto;
 st.markdown(html_logo, unsafe_allow_html=True)
 
 
-names=['ΛΑΜΠΡΙΑΝΑ ΤΣΙΑΚΠΙΝΗ']
-usernames=['labrianatsiak@icloud.com']
-passwords=['kKw63vspMq']
+# names=['ΛΑΜΠΡΙΑΝΑ ΤΣΙΑΚΠΙΝΗ']
+# usernames=['labrianatsiak@icloud.com']
+# passwords=['kKw63vspMq']
 # periods=['11-19 Μαρτίου']
 
 title = st.text_input('Email', 'labrianatsiak@icloud.com')
@@ -186,7 +186,7 @@ title = st.text_input('Email', 'labrianatsiak@icloud.com')
 
 # name, authentication_status, username = authenticator.login('Login', 'main')
 
-name='ΛΑΜΠΡΙΑΝΑ ΤΣΙΑΚΠΙΝΗ'
+# name='ΛΑΜΠΡΙΑΝΑ ΤΣΙΑΚΠΙΝΗ'
 
 
 
