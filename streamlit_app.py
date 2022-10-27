@@ -14,7 +14,8 @@ def main():
     st.header("Test Bug Download 404")
 
     input_form = st.sidebar.form("input_form")
-    input_form.write("Query inputs:")
+    input_form.write("Email")
+    title = st.text_input('Email', '')
     submit_button = input_form.form_submit_button("Submit")
 
     if submit_button is True:
