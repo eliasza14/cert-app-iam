@@ -80,7 +80,7 @@ def main():
                 file_name="diploma.pdf",
                 mime="application/octet-stream",
             )
-    main()
+            main()
         
 
 
