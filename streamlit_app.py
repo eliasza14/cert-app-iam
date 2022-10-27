@@ -77,7 +77,7 @@ def main():
             </body
         """
     st.markdown(newhtml,unsafe_allow_html=True)
-    html_logo ="<img style='display:block; margin-left:auto; margin-right:auto; text-align:center;' src='https://healthcare-management.gr/wp-content/uploads/2022/10/MicrosoftTeams-image-16.png'  width=400 height=143>"
+    html_logo ="<img style='display:block; margin-left:auto; margin-right:auto; text-align:center;' src='https://healthcare-management.gr/wp-content/uploads/2022/10/MicrosoftTeams-image-14.png'  width=412 height=107>"
     st.markdown(html_logo, unsafe_allow_html=True)
 
 
