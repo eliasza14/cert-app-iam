@@ -18,12 +18,28 @@ def main():
             
            
 
-                 .css-1v3fvcr{background: rgb(34,193,195);
+                .css-1v3fvcr{
+                background: rgb(34,193,195);
                 background: radial-gradient(circle, rgba(34,193,195,1) 46%, rgba(229,229,184,1) 100%);
                 }
+
+                .css-k1vhr4 {
+                    background: #2ad6ff;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    overflow: auto;
+                    -webkit-box-align: center;
+                    align-items: center;
+                }
+
+
+
                 div.css-nlntq9.e16nr0p33 p{background-color:white;
                 }
+
                 .css-nlntq9.e16nr0p33{}
+                
                 .block-container.css-12oz5g7.egzxvld2{
                     background-color:white;   
                     
@@ -31,12 +47,16 @@ def main():
                     border-radius:15px;
                     margin-top:67px;
                 }
+
                 .css-6awftf.e19lei0e1{ display:none;}
 
                 .title{}
-                .css-1cpxqw2.edgvbvh5{background-color:orange;
+                
+                .css-1cpxqw2.edgvbvh5{
+                    background-color:orange;
                     color: white;
                 }
+
                 .css-1cpxqw2.edgvbvh5:focus{background-color:white;
                     color: orange;
                     font-weight:bold;
