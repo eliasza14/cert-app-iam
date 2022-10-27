@@ -20,6 +20,7 @@ st.markdown(html_logo, unsafe_allow_html=True)
 
 
 if login==False:
+    st.write(login)
     title = st.text_input('Email', '')
 
 
@@ -39,7 +40,8 @@ if login==False:
 
 if title in df['email'].values:
         login=True
-        
+        st.write(login)
+
         number=df.loc[df.isin([title]).any(axis=1)].index
         index=number.tolist()[0]
         st.write(index)
