@@ -63,7 +63,7 @@ def main():
 
     if submit_button is True:
         # st.write(title)
-        df=pd.read_json('datalist2.json')
+        df=pd.read_json('https://cmtprooptiki.gr/api/datalist2.json')
         # df = pd.DataFrame(data={"col1": [1, 2], "col2": [3, 4]})
 
         # st.dataframe(df)
