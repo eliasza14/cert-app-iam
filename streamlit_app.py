@@ -15,11 +15,9 @@ def main():
     html_logo ="<img style='background-color:black;display:block; margin-left:auto; margin-right:auto; text-align:center;' src='https://healthcare-management.gr/wp-content/uploads/2022/10/MicrosoftTeams-image-16.png'  width=400 height=143>"
     st.markdown(html_logo, unsafe_allow_html=True)
 
-    input_form = st.sidebar.form("input_form")
-    input_form.write("Email")
-    input_form=st.text_input.form("input_form")
+
     title = st.text_input('Email', '')
-    submit_button = input_form.form_submit_button("Submit")
+    submit_button = st.button("Submit")
 
     if submit_button is True:
         st.write(title)
@@ -80,7 +78,6 @@ def main():
                 file_name="diploma.pdf",
                 mime="application/octet-stream",
             )
-    
         
 
 
