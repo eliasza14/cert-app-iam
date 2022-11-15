@@ -77,7 +77,7 @@ def main():
             </body
         """
     st.markdown(newhtml,unsafe_allow_html=True)
-    html_logo ="<img style='display:block; margin-left:auto; margin-right:auto; text-align:center;' src='http://inclusiveeducation.eu/wp-content/uploads/2022/09/I_AM-Logo.png'  width=412 height=107>"
+    html_logo ="<img style='display:block; margin-left:auto; margin-right:auto; text-align:center;' src='http://inclusiveeducation.eu/wp-content/uploads/2022/09/I_AM-Logo.png'  >"
     st.markdown(html_logo, unsafe_allow_html=True)
 
 
