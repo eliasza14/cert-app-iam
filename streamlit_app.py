@@ -24,7 +24,7 @@ def main():
                 }
 
                 .css-k1vhr4 {
-                    background-image: url('https://healthcare-management.gr/wp-content/uploads/2022/10/Untitled-design-10.gif');
+                    <!--background-image: url('https://healthcare-management.gr/wp-content/uploads/2022/10/Untitled-design-10.gif');-->
                     display: flex;
                     flex-direction: column;
                     width: 100%;
@@ -77,7 +77,7 @@ def main():
             </body
         """
     st.markdown(newhtml,unsafe_allow_html=True)
-    html_logo ="<img style='display:block; margin-left:auto; margin-right:auto; text-align:center;' src='https://healthcare-management.gr/wp-content/uploads/2022/10/MicrosoftTeams-image-14.png'  width=412 height=107>"
+    html_logo ="<img style='display:block; margin-left:auto; margin-right:auto; text-align:center;' src='http://inclusiveeducation.eu/wp-content/uploads/2022/09/I_AM-Logo.png'  width=412 height=107>"
     st.markdown(html_logo, unsafe_allow_html=True)
 
 
