@@ -94,8 +94,12 @@ def main():
         mydb = client["iamdb"]
 
         mycol = mydb["users"]   
-        x = mycol.find_one()
-        st.write(x)
+        item_details= mycol.find()
+        #st.write(item_details)
+        for item in item_details:
+        # This does not give a very readable output
+            
+            st.write(item)
     except MongoClient.errors.ServerSelectionTimeoutError as err:
         # do whatever you need
         print(err)  
