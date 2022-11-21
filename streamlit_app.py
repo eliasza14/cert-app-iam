@@ -109,7 +109,7 @@ def main():
         # df=pd.read_json('https://cmtprooptiki.gr/api/datalist2.json')
         #df=pd.read_json(item_details)
         list_cur = list(item_details)
-  
+        st.write(list_cur)
         # Converting to the DataFrame
         df = pd.DataFrame(list_cur)
         # df = pd.DataFrame(data={"col1": [1, 2], "col2": [3, 4]})
