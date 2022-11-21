@@ -115,7 +115,7 @@ def main():
         # df = pd.DataFrame(data={"col1": [1, 2], "col2": [3, 4]})
         # conn="mongodb+srv://cmtuser:media14561@cluster0.hmsyg.mongodb.net/isupportdb?retryWrites=true&w=majority"
         # client = MongoClient(conn)
-
+        st.write(df)
         # st.dataframe(df)
               
 
