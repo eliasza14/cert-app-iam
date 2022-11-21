@@ -92,8 +92,7 @@ def main():
 
 
 
-        client = MongoClient("mongodb+srv:// "+st.secrets["db_username"]+":"+st.secrets["db_password"]+"@iam.dbo97.mongodb.net/?retryWrites=true&w=majority")
-        st.write(client)
+        client = MongoClient("mongodb+srv://cmtuser:media14561@iam.dbo97.mongodb.net/?retryWrites=true&w=majority")
         client.server_info() # force connection on a request as the
                             # connect=True parameter of MongoClient seems
                             # to be useless here 
