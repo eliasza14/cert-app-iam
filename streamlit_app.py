@@ -111,7 +111,7 @@ def main():
         list_cur = list(item_details)
   
         # Converting to the DataFrame
-        df = DataFrame(list_cur)
+        df = pd.DataFrame(list_cur)
         # df = pd.DataFrame(data={"col1": [1, 2], "col2": [3, 4]})
         # conn="mongodb+srv://cmtuser:media14561@cluster0.hmsyg.mongodb.net/isupportdb?retryWrites=true&w=majority"
         # client = MongoClient(conn)
