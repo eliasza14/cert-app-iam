@@ -90,7 +90,6 @@ def main():
         client.server_info() # force connection on a request as the
                             # connect=True parameter of MongoClient seems
                             # to be useless here 
-        st.write('connection successfull')
         mydb = client["iamdb"]
 
         mycol = mydb["users"]   
