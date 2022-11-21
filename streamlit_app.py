@@ -110,7 +110,7 @@ def main():
 
             # right.write("Here's the template we'll be using:")
 
-            right.image("http://healthcare-management.gr/wp-content/uploads/2022/10/certificate.jpg", width=300)
+            right.image("http://inclusiveeducation.eu/wp-content/uploads/2022/11/image001.png", width=300)
 
             env = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
             template = env.get_template("template.html")
