@@ -106,7 +106,8 @@ def main():
         st.write(err)   
     if submit_button is True:
         # st.write(title)
-        df=pd.read_json('https://cmtprooptiki.gr/api/datalist2.json')
+        # df=pd.read_json('https://cmtprooptiki.gr/api/datalist2.json')
+        df=pd.read_json(item_details)
         # df = pd.DataFrame(data={"col1": [1, 2], "col2": [3, 4]})
         # conn="mongodb+srv://cmtuser:media14561@cluster0.hmsyg.mongodb.net/isupportdb?retryWrites=true&w=majority"
         # client = MongoClient(conn)
