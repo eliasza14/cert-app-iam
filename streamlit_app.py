@@ -86,7 +86,7 @@ def main():
     submit_button = st.button("Είσοδος")
 
     try:
-        client = MongoClient("mongodb+srv://cmtuser:media14561@cluster0.hmsyg.mongodb.net/isamdb?retryWrites=true&w=majority")
+        client = MongoClient("mongodb+srv://cmtuser:media14561@iam.dbo97.mongodb.net/?retryWrites=true&w=majority")
         client.server_info() # force connection on a request as the
                             # connect=True parameter of MongoClient seems
                             # to be useless here 
