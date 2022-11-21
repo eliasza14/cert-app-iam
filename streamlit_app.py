@@ -90,9 +90,11 @@ def main():
         client.server_info() # force connection on a request as the
                             # connect=True parameter of MongoClient seems
                             # to be useless here 
+        st.write('connection successfull')
     except MongoClient.errors.ServerSelectionTimeoutError as err:
         # do whatever you need
-        print(err)     
+        print(err)  
+        st.write(err)   
     if submit_button is True:
         # st.write(title)
         df=pd.read_json('https://cmtprooptiki.gr/api/datalist2.json')
