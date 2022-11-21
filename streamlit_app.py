@@ -100,11 +100,10 @@ def main():
         list_cur=[]
         for item in item_details:
         # This does not give a very readable output
-            list_cur.append[item]
+            list_cur.append(item)
             st.write(item)
     except MongoClient.errors.ServerSelectionTimeoutError as err:
-        # do whatever you need
-        print(err)  
+        # do whatever you need 
         st.write(err)   
     if submit_button is True:
         # st.write(title)
