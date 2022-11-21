@@ -95,6 +95,7 @@ def main():
 
         mycol = mydb["users"]   
         item_details= mycol.find()
+        st.write(item_details)
         #st.write(item_details)
         for item in item_details:
         # This does not give a very readable output
