@@ -86,11 +86,12 @@ def main():
     submit_button = st.button("Είσοδος")
 
     try:
-        client = MongoClient("mongodb+srv://cmtuser:media14561@cluster0.hmsyg.mongodb.net/isupportdb?retryWrites=true&w=majority")
+        client = MongoClient("mongodb+srv://cmtuser:media14561@cluster0.hmsyg.mongodb.net/isamdb?retryWrites=true&w=majority")
         client.server_info() # force connection on a request as the
                             # connect=True parameter of MongoClient seems
                             # to be useless here 
         st.write('connection successfull')
+
     except MongoClient.errors.ServerSelectionTimeoutError as err:
         # do whatever you need
         print(err)  
