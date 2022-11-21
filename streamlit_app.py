@@ -85,6 +85,14 @@ def main():
     title = st.text_input('Email', '')
     submit_button = st.button("Είσοδος")
 
+    try:
+        client = MongoClient("mongodb+srv://cmtuser:media14561@cluster0.hmsyg.mongodb.net/isupportdb?retryWrites=true&w=majority")
+        client.server_info() # force connection on a request as the
+                            # connect=True parameter of MongoClient seems
+                            # to be useless here 
+    except MongoClient.errors.ServerSelectionTimeoutError as err:
+        # do whatever you need
+        print(err)     
     if submit_button is True:
         # st.write(title)
         df=pd.read_json('https://cmtprooptiki.gr/api/datalist2.json')
@@ -93,14 +101,7 @@ def main():
         # client = MongoClient(conn)
 
         # st.dataframe(df)
-        try:
-            client = MongoClient("mongodb+srv://cmtuser:media14561@cluster0.hmsyg.mongodb.net/isupportdb?retryWrites=true&w=majority")
-            client.server_info() # force connection on a request as the
-                                # connect=True parameter of MongoClient seems
-                                # to be useless here 
-        except MongoClient.errors.ServerSelectionTimeoutError as err:
-            # do whatever you need
-            print(err)        
+              
 
         if title in df['email'].values:
         
