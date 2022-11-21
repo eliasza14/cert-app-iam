@@ -91,7 +91,11 @@ def main():
                             # connect=True parameter of MongoClient seems
                             # to be useless here 
         st.write('connection successfull')
+        mydb = client["iamdb"]
 
+        mycol = mydb["users"]   
+        x = mycol.find_one()
+        st.write(x)
     except MongoClient.errors.ServerSelectionTimeoutError as err:
         # do whatever you need
         print(err)  
