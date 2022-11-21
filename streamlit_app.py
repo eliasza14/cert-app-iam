@@ -86,15 +86,11 @@ def main():
     submit_button = st.button("Είσοδος")
 
     try:
-        st.write("DB username:", st.secrets["db_username"])
-        st.write("DB password:", st.secrets["db_password"])
-        st.write("My cool secrets:", st.secrets["my_cool_secrets"]["things_i_like"])# And the root-level secrets are also accessible as environment variables:import os
-
-        st.write(    "Has environment variables been set:",    os.environ["db_username"] == st.secrets["db_username"],)
 
 
 
-        client = MongoClient("mongodb+srv://cmtuser:media14561@iam.dbo97.mongodb.net/?retryWrites=true&w=majority")
+
+        client = MongoClient("mongodb+srv:// "+st.secrets["db_username"]+":"+st.secrets["db_password"]+"@iam.dbo97.mongodb.net/?retryWrites=true&w=majority")
         client.server_info() # force connection on a request as the
                             # connect=True parameter of MongoClient seems
                             # to be useless here 
